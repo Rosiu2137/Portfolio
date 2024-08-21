@@ -11,10 +11,16 @@ html
 }
 body
 {
-    height: 5000px;
+    background-color: black;
+    height: 20000px;
+}
+main
+{
+    width:100%;
+    padding: 0 2rem;
     display: flex;
     flex-direction: column;
-    background-color: black;
+    align-items: center;
 }
 nav
 {   
@@ -74,4 +80,33 @@ nav>ul
     background-color: rgb(0, 0, 0);
     box-shadow: 0 0 3rem 2rem rgb(0, 0, 0);
     z-index: 1;
+}
+#about
+{
+    width:100%;
+    background-color: rgb(92, 92, 92);
+
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap:3rem;
+
+}
+#about>img
+{
+    width:100%;
+}
+.description
+{
+    
+}
+.blockquote
+{
+    width:100%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border: .3rem solid green;
+    border-radius: 1rem;
 }
