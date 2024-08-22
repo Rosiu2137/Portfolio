@@ -84,20 +84,31 @@ nav>ul
 #about
 {
     width:100%;
-    background-color: rgb(92, 92, 92);
-
     display: grid;
     grid-template-columns: 3fr 2fr;
     gap:3rem;
 
 }
-#about>img
+.image
+{
+    position: relative;
+}
+.image>img
 {
     width:100%;
+    filter: drop-shadow(.5rem -.5rem 1rem green);
 }
 .description
 {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 0;
+}
+.description>h2
+{
+    font-size: 3rem;
 }
 .blockquote
 {
@@ -109,4 +120,13 @@ nav>ul
     padding: 1rem;
     border: .3rem solid green;
     border-radius: 1rem;
+}
+.shadow2
+{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 2rem 2rem rgb(0, 0, 0);
+
 }
