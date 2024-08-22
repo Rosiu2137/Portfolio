@@ -152,3 +152,47 @@ nav>ul
     border-top: 3px dashed grey;
     margin: 100px 0;
 }
+.experience
+{
+
+    background: url(../assets/img/Untitled-10.png) center;
+    background-size: contain;
+    display: grid;
+    width:90rem;
+    height: 90rem;
+    gap:1rem;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+}
+#htmlLogo
+{
+    position: absolute;
+    width:15rem;
+    height: 15rem;
+    top:5.5rem;
+    left:7.5rem;
+}
+#cssLogo
+{
+    position: absolute;
+    width:15rem;
+    height: 15rem;
+    top:21.5rem;
+    right:17rem;
+}
+#jsLogo
+{
+    position: absolute;
+    width:15rem;
+    height: 15rem;
+    top:52.7rem;
+    left:13.2rem;
+}
+#reactLogo
+{
+    position: absolute;
+    width:15rem;
+    height: 15rem;
+    top:69.5rem;
+    right:9.5rem;
+}
