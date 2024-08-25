@@ -522,3 +522,112 @@ nav>ul
    width:3rem;
    height: 3rem;
 }
+.contact
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5rem 1fr 8rem;
+    gap:2rem;
+    margin: 2rem 0;
+}
+.contact>h2
+{
+    grid-column: 1/3;
+    text-align: center;
+    font-size: 4rem;
+}
+.emailForm
+{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap:2rem;
+    grid-row: 2/4;
+    grid-column: 2/3;
+}
+.socials
+{
+    display: flex;
+    gap:0 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.socials>a>img
+{
+    width:2.5rem;
+    height: 2.5rem;
+    filter:brightness(0.5);
+    transition: all .3s ease;
+}
+.socials>a>img:hover
+{
+    filter:brightness(1);
+    transform: scale(1.1);
+}
+.socialsLine
+{
+    width:.2rem;
+    height: 3rem;
+    border-radius: 10px;
+    background-color: grey;
+}
+.mail
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:.6rem;
+    width:100%;
+}
+.inputContainer
+{
+
+    position: relative;
+    padding: .5rem .8rem;
+    border: .3rem solid green;
+    border-radius: 1rem;
+}
+.inputContainer>input
+{
+    width:100%;
+    font-size: 1.5rem;
+    background: none;
+    outline: none;
+    border:0;
+}
+.inputContainer>h3
+{
+    position: absolute;
+    top:-1.2rem;
+    left:2rem;
+    font-size: 1.5rem;
+    background-color: black;
+    padding: 0 .3rem;
+}
+.emailForm>button
+{
+    font-size: 1.5rem;
+    background-color: rgb(0, 74, 0);
+    border:.3rem solid green;
+    border-radius: 1rem;
+    outline: none;
+    padding: .3rem;
+}
+.emailForm>textarea
+{
+    width:100%;
+    height: 10rem;
+    resize: none;
+    padding: .5rem .8rem;
+    outline: none;
+    background: none;
+    border:.3rem solid green;
+    border-radius: 1rem;
+    font-size: 1rem;
+}
+.emailForm>textarea::placeholder
+{
+    font-weight: 900;
+}
