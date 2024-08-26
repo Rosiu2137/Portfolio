@@ -35,6 +35,21 @@ nav
     padding: .5rem 1rem;
     transition: all 1s ease;
 }
+.upperShadow
+{
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    box-shadow: 0 0 5rem 5rem #111111;
+    z-index: -1;
+    opacity: 0;
+    transition: all .3s ease;
+}
+.upperShadowDisplay
+{
+    opacity: 1;
+}
 .logo
 {
     scale: 0;
