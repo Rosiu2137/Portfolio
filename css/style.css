@@ -13,6 +13,24 @@ body
 {
     background-color: #111111;
 }
+body::-webkit-scrollbar
+{
+    background-color: #272727;
+    width:.8rem;
+}
+body::-webkit-scrollbar-track
+{
+    margin: .3rem 0;
+}
+body::-webkit-scrollbar-thumb
+{
+    background-color: #218c03;
+    border-radius: 6px;
+}
+body::-webkit-scrollbar-thumb:hover
+{
+    background-color: #2cbf04;
+}
 main
 {
     width:100%;
@@ -65,7 +83,7 @@ nav
 }
 .logo:hover
 {
-    color: #218c03;
+    color: #2cbf04;
     transform: scale(1.05);
 }
 .logo>img
@@ -99,7 +117,6 @@ nav>ul>li
 }
 nav>ul>li:hover
 {
-    color: #218c03;
     color: #38f205;
 }
 .header
