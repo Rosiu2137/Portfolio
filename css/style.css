@@ -8,6 +8,7 @@
 html
 {
     font-size: 1vw;
+    scroll-behavior: smooth;
 }
 body
 {
@@ -739,6 +740,14 @@ nav>ul>li:hover
     padding: .7rem 1rem;
     border: .3rem solid #218c03;
     border-radius: 1rem;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.inputContainerFocused
+{
+    border:.3rem solid #2cbf04;
+    box-shadow: 0 0 .5rem 0rem #218c03;
+    transition: all .3s ease;
 }
 .inputContainer>input
 {
@@ -747,6 +756,11 @@ nav>ul>li:hover
     background: none;
     outline: none;
     border:0;
+    cursor: pointer;
+}
+.inputContainer>input:focus
+{
+    cursor: text;
 }
 .inputContainer>input::placeholder
 {
@@ -763,6 +777,11 @@ nav>ul>li:hover
     padding: 0 .3rem;
     color: grey;
     font-weight: 900;
+    cursor: pointer;
+}
+.emailPlaceholderFocused
+{
+    color:rgb(208, 208, 208) !important;
 }
 .emailForm>textarea
 {
@@ -774,8 +793,10 @@ nav>ul>li:hover
     background: none;
     border:.3rem solid #218c03;
     border-radius: 1rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 500;
+    transition: all .3s ease;
+    cursor: pointer;
 }
 .emailForm>textarea::placeholder
 {
@@ -785,6 +806,7 @@ nav>ul>li:hover
 {
     border:.3rem solid #2cbf04;
     box-shadow: 0 0 .5rem 0rem #218c03;
+    cursor: text;
 }
 .emailForm>textarea::-webkit-scrollbar
 {
@@ -814,10 +836,12 @@ nav>ul>li:hover
     outline: none;
     padding: .3rem;
     font-weight: 700;
+    transition: all .3s ease;
 }
 .emailForm>button:hover
 {
     background: #218c03;
+    box-shadow: 0 0 .5rem 0rem #218c03;
 }
 footer
 {
