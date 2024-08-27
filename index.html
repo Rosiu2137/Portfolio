@@ -304,15 +304,19 @@
                 <a href="https://www.facebook.com/profile.php?id=100080780925752&locale=pl_PL" target="_blank"><img src="./assets/img/fb.png" alt="Facebook Link"></a>
             </div>
 
-            <form class="emailForm">
+            <form class="emailForm" id="form">
                 <div class="inputContainer" id="emailContainer">
                     <h3 id="emailPlaceholder">Podaj Swój Adres Email</h3>
                     <input type="text" placeholder="yourname@domain" id="email">
                 </div>
-                
-                <textarea placeholder="Napisz wiadomość..."></textarea>
 
-                <button type="button">Wyślij</button>
+                <div class="error" id="emailErrorDiv">dfddf</div>
+                
+                <textarea placeholder="Napisz wiadomość..." id="message"></textarea>
+
+                <div class="error" id="messageError">dfdf</div>
+
+                <button id="sendBtn">Wyślij</button>
             </form>
 
         </article>
