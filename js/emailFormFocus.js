@@ -7,8 +7,6 @@ let emailFocused = false
 
 const containerStylesHandler = ()=>
 {
-    
-    console.log()
     emailContainer.classList.toggle("inputContainerFocused")
     emailPlaceholder.classList.toggle("emailPlaceholderFocused")
 }

@@ -19,6 +19,7 @@ const navPointerPosition=(element)=>
 
 const scrollFunc = (e)=>
 {
+
     if(contact.getBoundingClientRect().top - contact.clientHeight * 0.5 < 0)
     {
         navPointerPosition(4)
@@ -47,6 +48,7 @@ const scrollFunc = (e)=>
 
 }
 
+window.addEventListener("resize",scrollFunc)
 window.addEventListener("scroll",scrollFunc)
 
 scrollFunc()
