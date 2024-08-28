@@ -48,6 +48,7 @@ const setErrors = ()=>
     const emailErrorDiv = document.querySelector("#emailErrorDiv")
     const messageError = document.querySelector("#messageError")
     const emailForm = document.querySelector(".emailForm")
+    messageError.classList.remove('backendError')
     if(error.email || error.message)
     {
         emailForm.style.gap = `0.8rem`

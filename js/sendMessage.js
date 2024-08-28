@@ -1,12 +1,48 @@
-import { loadingIcon } from "./loadingIcon.js"
+import database from './database.js'
 
 const button = document.querySelector("#sendBtn")
+const sendAgain = document.querySelector("#sendAgain")
+const successMessage = document.querySelector(".sendSuccess")
 
-
-export const sendMessage = (email,message)=>
+const sendSuccess = ()=>
 {
-    console.log("jd")
-    let loading = true
-
-    button.innerHTML = loadingIcon
+    button.innerHTML = 'Wyślij'
+    successMessage.classList.add("sendSuccessDisplay")
+    button.classList.remove("buttonDisabled")
+    button.disabled = false
 }
+
+const sendError = ()=>
+{
+    const emailForm = document.querySelector(".emailForm")
+    const errorPlace = document.querySelector("#messageError")
+    button.innerHTML = 'Wyślij'
+    button.classList.remove("buttonDisabled")
+    button.disabled = false
+    errorPlace.innerHTML = 'Wystąpił bład serwera. Spróbuj ponownie później'
+    errorPlace.classList.add('backendError')
+    emailForm.style.gap = `0.8rem`
+}
+
+export const sendMessage = async(email,message)=>
+{
+    button.innerHTML = `...`
+    try
+    {
+        await fetch(`${database}.json`,{
+            method:"POST",
+            body:JSON.stringify({email:email,message:message})
+        })
+        sendSuccess()
+    }
+    catch(ex)
+    {
+       sendError()
+    }
+}
+
+sendAgain.addEventListener("click",()=>{
+    document.querySelector("#email").value = ''
+    document.querySelector("#message").value = ''
+    successMessage.classList.remove("sendSuccessDisplay")
+})

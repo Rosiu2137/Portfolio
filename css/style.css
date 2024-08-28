@@ -669,6 +669,8 @@ nav>ul>li:hover
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr 8rem;
     gap:0 2rem;
+    position: relative;
+    overflow: hidden;
 }
 .contact>h2
 {
@@ -891,4 +893,52 @@ footer>h2
     padding-left: 2rem;
     font-weight: 900;
     margin-top: -.5rem;
+}
+.backendError
+{
+    justify-content: center !important;
+    display: flex !important;
+}
+.sendSuccess
+{
+    background-color: #111111;
+    position: absolute;
+    bottom: 0rem;
+    top: 5rem;
+    right: -100%;
+    width:50%;
+    transition: all .5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+    box-shadow: 0 2rem 1rem 1rem #111111;
+
+}
+.sendSuccessDisplay
+{
+    right: 0;
+}
+.sendSuccess>button
+{
+    font-size: 1.5rem;
+    background: #0f4001;
+    border:.3rem solid #218c03;
+    border-radius: 1rem;
+    outline: none;
+    padding: .5rem;
+    font-weight: 700;
+    transition: all .3s ease;
+    width:80%;
+}
+.sendSuccess>button:hover
+{
+    background: #218c03;
+    box-shadow: 0 0 .5rem 0rem #218c03;
+}
+.svgOk
+{
+    width:5rem;
+    height: 5rem;
 }

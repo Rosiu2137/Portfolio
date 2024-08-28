@@ -310,18 +310,36 @@
                     <input type="text" placeholder="yourname@domain" id="email">
                 </div>
 
-                <div class="error" id="emailErrorDiv">dfddf</div>
+                <div class="error" id="emailErrorDiv"></div>
                 
                 <textarea placeholder="Napisz wiadomość..." id="message"></textarea>
 
-                <div class="error" id="messageError">dfdf</div>
+                <div class="error" id="messageError"></div>
 
                 <button id="sendBtn">Wyślij</button>
             </form>
 
-        </article>
+            <div class="sendSuccess">
+                <svg class="svgOk" viewBox="0 0 48 48">
+                    <defs
+                       id="defs1" />
+                    <g
+                       id="layer1">
+                      <path
+                         style="display:inline;fill:#2cbf04;fill-opacity:1;stroke-width:0.615899;stroke-miterlimit:5.8;paint-order:stroke fill markers"
+                         d="M 5.03533,23.574642 0.99390986,27.616063 16.75909,43.381242 46.83308,13.30725 41.226065,7.7002353 17.195999,31.730302 6.7391222,21.814228 Z"
+                         id="path1" />
+                    </g>
+                  </svg>
+                <h3>Twoja wiadomość została wysłana</h3>
+                <button id="sendAgain">Wyślij nową wiadomość</button>
 
+            </div>
+            
+        </article>
+        
     </main>
+    
 
     <footer>
         <img src="./assets/img/miniLogo0000000.png" alt="Logo">
