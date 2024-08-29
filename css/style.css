@@ -270,17 +270,22 @@ nav>ul>li:hover
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:1rem;
+    gap:.5rem;
     border: .3rem solid #111111;
     overflow: hidden;
     max-width:15rem;
     max-height: 15rem;
+}
+.item>h3
+{
+    font-weight: 700;
 }
 .item>img
 {
     width:14.5rem;
     height: 14.5rem;
     transition: all .5s ease;
+    margin-bottom: .5rem;
 }
 #htmlLogo
 {
@@ -337,7 +342,7 @@ nav>ul>li:hover
     transform: translate(0,-20%);
     border-radius: 1rem;
     padding: 1rem;
-    max-width:20rem;
+    max-width:22rem;
 }
 .item:hover>p
 {
@@ -929,8 +934,9 @@ footer>h2
     outline: none;
     padding: .5rem;
     font-weight: 700;
-    transition: all .3s ease;
+    transition: all .3s ease, opacity .5s ease;
     width:80%;
+    opacity: 0;
 }
 .sendSuccess>button:hover
 {
@@ -941,4 +947,11 @@ footer>h2
 {
     width:5rem;
     height: 5rem;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+#sendSuccessMessage
+{
+    opacity: 0;
+    transition: opacity .5s ease;
 }

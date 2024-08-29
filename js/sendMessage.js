@@ -1,4 +1,6 @@
 import database from './database.js'
+import { sentAnimation, clearSentAnimation } from './animations/sentAnimation.js'
+
 
 const button = document.querySelector("#sendBtn")
 const sendAgain = document.querySelector("#sendAgain")
@@ -10,6 +12,7 @@ const sendSuccess = ()=>
     successMessage.classList.add("sendSuccessDisplay")
     button.classList.remove("buttonDisabled")
     button.disabled = false
+    sentAnimation()
 }
 
 const sendError = ()=>
@@ -44,5 +47,9 @@ export const sendMessage = async(email,message)=>
 sendAgain.addEventListener("click",()=>{
     document.querySelector("#email").value = ''
     document.querySelector("#message").value = ''
-    successMessage.classList.remove("sendSuccessDisplay")
+    clearSentAnimation()
+    setTimeout(()=>{
+        successMessage.classList.remove("sendSuccessDisplay")
+
+    },500)
 })
