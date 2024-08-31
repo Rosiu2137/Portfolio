@@ -9,6 +9,8 @@ html
 {
     font-size: 1vw;
     scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
 }
 body
 {
@@ -123,7 +125,8 @@ nav>ul
     gap:1.5rem;
     font-size: 1rem;
     align-items: center;
-    font-weight: 700;
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
 }
 nav>ul>li
 {
@@ -156,22 +159,25 @@ nav>ul>li:hover
 .header>h1
 {
     z-index: 2;
-    font-size: 4rem;
+    font-size: 3.8rem;
     color: #2cbf04;
     text-shadow: 0 0 .5rem #38f205;
+    font-family: "Noto Sans Thai", sans-serif;
 }
 .header>h2
 {
     z-index: 2;
     color: rgb(255, 255, 255);
     text-shadow: .15rem .1rem 0 #2cbf04;
+    font-family: "Noto Sans Thai", sans-serif;
+    font-size: 1.8rem;
 }
 .shadow
 {
     width: 100%;
     position: absolute;
     bottom: 0;
-    box-shadow: 0 -1rem 5rem 5rem #111111 !important;
+    box-shadow: 0 -1rem 3rem 3rem #111111 !important;
     z-index: 1;
 }
 
@@ -180,6 +186,7 @@ nav>ul>li:hover
     width:100%;
     display: grid;
     grid-template-columns: 3fr 2fr;
+    padding: 1rem;
     gap:3rem;
 }
 .image
@@ -225,6 +232,7 @@ nav>ul>li:hover
     font-size: 4rem;
     font-weight: 900;
     margin-bottom: 1rem;
+    text-shadow: .2rem .15rem 0 #2cbf04;
 }
 .blockquote
 {
@@ -238,14 +246,17 @@ nav>ul>li:hover
     font-size: 1.2rem;
     border-radius: 1rem;
     font-style: italic;
-    font-weight: 900;
+    font-weight: 700;
     gap:.5rem;
     text-align: center;
+    font-family: "Roboto", sans-serif;
 }
 .blockquote>cite
 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: rgb(175, 175, 175);
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
 }
 .shadow2
 {
@@ -253,7 +264,7 @@ nav>ul>li:hover
     position: absolute;
     bottom: 5rem;
     background-color: rgb(255, 0, 0);
-    box-shadow: 0 0 5rem 5rem #111111 !important;
+    box-shadow: 0 0 2rem 2rem #111111 !important;
 
 }
 
@@ -272,7 +283,6 @@ nav>ul>li:hover
 }
 .experience
 {
-
     background: url(../assets/img/Untitled-11.png) center;
     background-size: contain;
     width:90rem;
@@ -285,22 +295,25 @@ nav>ul>li:hover
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:.5rem;
+    gap:.3rem;
     border: .3rem solid #111111;
     overflow: hidden;
     max-width:15rem;
     max-height: 15rem;
+    
 }
 .item>h3
 {
-    font-weight: 700;
+    font-weight: 900;
+    font-size: 1.8rem;
+    font-family: "Noto Sans Thai", sans-serif;
 }
 .item>img
 {
     width:14.5rem;
     height: 14.5rem;
     transition: all .5s ease;
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
 }
 #htmlLogo
 {
@@ -329,7 +342,10 @@ nav>ul>li:hover
 .item>p
 {
     scale: 0;
+    color: rgb(212, 212, 212);
     transition: all .5s ease;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
 }
 #htmlLogo:hover
 {
@@ -356,7 +372,7 @@ nav>ul>li:hover
     max-height: max-content;
     transform: translate(0,-20%);
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 1rem 1.5rem .5rem 1.5rem;
     max-width:22rem;
 }
 .item:hover>p
@@ -374,9 +390,10 @@ nav>ul>li:hover
 {
     width:100%;
     display: grid;
-    gap:5rem 2rem;
+    gap:6rem 2rem;
     grid-template-columns: 1fr .2rem 1fr .2rem 1fr;
     margin-top: 4rem;
+   
 }
 .additionalSkills>h3
 {
@@ -384,6 +401,7 @@ nav>ul>li:hover
     justify-self: center;
     font-size: 3rem;
     font-weight: 900;
+    font-family: "Roboto", sans-serif;
 }
 .verticalLine
 {
@@ -404,6 +422,7 @@ nav>ul>li:hover
 .item2>h4
 {
     font-size: 3rem;
+    font-family: "Roboto", sans-serif;
 }
 .item2>p
 {
@@ -467,6 +486,7 @@ nav>ul>li:hover
 {
     font-size: 4rem;
     font-weight: 900;
+    text-shadow: .2rem .15rem 0 #2cbf04;
 }
 .devItem
 {
@@ -483,12 +503,13 @@ nav>ul>li:hover
 }
 .devItem>h3
 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     color: rgb(180, 180, 180);
     font-weight:700;
+    font-family: "Noto Sans Thai", sans-serif;
 }
 .devItem>p
 {
@@ -526,6 +547,7 @@ nav>ul>li:hover
 {
     font-size: 4rem;
     font-weight: 900;
+    text-shadow: .2rem .15rem 0 #2cbf04;
 }
 .carousel
 {
@@ -542,14 +564,21 @@ nav>ul>li:hover
     justify-items: center;
     align-items: center;
 }
+.carouselItem>p
+{
+    color: rgb(167, 167, 167);
+}
 .carouselItem>h3
 {
     font-size: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 700;
+    font-weight: 900;
     color: white;
+    font-family: "Noto Sans Thai", sans-serif;
+    color: #2cbf04;
+    text-shadow: 0 0 .3rem #38f205;
 }
 .carouselItem>img
 {
@@ -621,6 +650,7 @@ nav>ul>li:hover
     justify-content: center;
     font-size: 3rem;
     font-weight: 900;
+    font-family: "Roboto", sans-serif;
 }
 .projectsItem
 {
@@ -643,8 +673,9 @@ nav>ul>li:hover
 }
 .projectsItem>header>h3
 {
-    font-weight: 900;
+    font-weight: 700;
     margin: 0;
+    font-family: "Roboto", sans-serif;
 }
 .projectsItem>figcaption
 {
@@ -700,6 +731,7 @@ nav>ul>li:hover
     position: relative;
     overflow: hidden;
     align-items: center;
+    
 }
 .contact>h2
 {
@@ -708,6 +740,7 @@ nav>ul>li:hover
     font-size: 4rem;
     margin-bottom: 2rem;
     font-weight: 900;
+    text-shadow: .2rem .15rem 0 #2cbf04;
 }
 .contact>p
 {
@@ -804,6 +837,7 @@ nav>ul>li:hover
     outline: none;
     border:0;
     cursor: pointer;
+    
 }
 .inputContainer>input:focus
 {
@@ -881,7 +915,6 @@ nav>ul>li:hover
     padding: .3rem;
     font-weight: 700;
     transition: all .3s ease;
-
     display: flex;
     justify-content: center;
     align-items: center;
