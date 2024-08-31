@@ -1,4 +1,4 @@
-const header = document.querySelector("header")
+const header = document.querySelector(".header")
 const nav = document.querySelector("nav")
 const logo = document.querySelector(".logo")
 const upperShadow = document.querySelector(".upperShadow")

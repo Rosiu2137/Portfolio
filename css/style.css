@@ -619,13 +619,14 @@ nav>ul>li:hover
     transition: all .5s ease;
     border: .3rem solid #111111;
     cursor: default;
+    justify-content: space-between;
 }
 
 .projectsItem:hover>figcaption
 {
     color: white;
 }
-.projectsItem>h3
+.projectsItem>header>h3
 {
     font-weight: 900;
     margin: 0;
@@ -655,14 +656,21 @@ nav>ul>li:hover
     background-color: #2cbf04;
     border: .3rem solid #2cbf04;
 }
-.projectsItem>img
+.projectsItem>header
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+}
+.projectsItem>header>img
 {
     width:15rem;
     border-radius: .5rem;
     filter: grayscale(0.5);
     transition: all 1s ease;
 }
-.projectsItem:hover>img
+.projectsItem:hover>header>img
 {
     filter: grayscale(0);
     transform: scale(1.05);
