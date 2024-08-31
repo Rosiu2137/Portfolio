@@ -5,6 +5,7 @@ import './emailFormFocus.js'
 import './navPointer.js'
 import './scrollTo.js'
 import './validate.js'
+import './animations/myImageAnimation.js'
 
 
 
