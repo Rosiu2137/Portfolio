@@ -59,7 +59,7 @@ nav
 .navPointer
 {
     position: absolute;
-    bottom: .3rem;
+    bottom: .5rem;
     height: .3rem;
     background-color: #218c03;
     border-radius: 20px;
@@ -134,7 +134,7 @@ nav>ul>li
 }
 nav>ul>li:hover
 {
-    color: #38f205;
+    color: #2cbf04;
 }
 .header
 {
@@ -161,16 +161,17 @@ nav>ul>li:hover
     z-index: 2;
     font-size: 3.8rem;
     color: #2cbf04;
-    text-shadow: 0 0 .5rem #38f205;
+    text-shadow: 0 0 .4rem #38f205;
+    font-weight: 900;
     font-family: "Noto Sans Thai", sans-serif;
 }
 .header>h2
 {
     z-index: 2;
     color: rgb(255, 255, 255);
-    text-shadow: .15rem .1rem 0 #2cbf04;
+    text-shadow: .15rem .1rem .1rem #2cbf04;
     font-family: "Noto Sans Thai", sans-serif;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 .shadow
 {
@@ -219,13 +220,12 @@ nav>ul>li:hover
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:1rem;
     justify-content: space-between;
 }
 .description>p
 {
     font-size: 1rem;
-    color: rgb(187, 187, 187);
+    color: rgb(180, 180, 180);
 }
 .description>h2
 {
@@ -233,6 +233,7 @@ nav>ul>li:hover
     font-weight: 900;
     margin-bottom: 1rem;
     text-shadow: .2rem .15rem 0 #2cbf04;
+    margin-bottom: 1rem;
 }
 .blockquote
 {
@@ -250,11 +251,12 @@ nav>ul>li:hover
     gap:.5rem;
     text-align: center;
     font-family: "Roboto", sans-serif;
+    margin-top: 1rem;
 }
 .blockquote>cite
 {
     font-size: 1.5rem;
-    color: rgb(175, 175, 175);
+    color: rgb(187, 187, 187);
     font-family: "Roboto", sans-serif;
     font-weight: 900;
 }
@@ -283,7 +285,7 @@ nav>ul>li:hover
 }
 .experience
 {
-    background: url(../assets/img/Untitled-11.png) center;
+    background: url(../assets/img/tloooo.png) center;
     background-size: contain;
     width:90rem;
     height: 90rem;
@@ -300,7 +302,6 @@ nav>ul>li:hover
     overflow: hidden;
     max-width:15rem;
     max-height: 15rem;
-    
 }
 .item>h3
 {
@@ -317,32 +318,32 @@ nav>ul>li:hover
 }
 #htmlLogo
 {
-    transition: all 1.5s ease;
+    transition: all 1s ease;
     top:5.5rem;
     left:7.5rem;
 }
 #cssLogo
 {
-    transition: all 1.5s ease;
+    transition: all 1s ease;
     top:21.5rem;
     right:17rem;
 }
 #jsLogo
 {
-    transition: all 1.5s ease;
+    transition: all 1s ease;
     top:52.7rem;
     left:13.2rem;
 }
 #reactLogo
 {
-    transition: all 1.5s ease;
+    transition: all 1s ease;
     top:69.5rem;
     right:4rem;
 }
 .item>p
 {
     scale: 0;
-    color: rgb(212, 212, 212);
+    color: rgb(200, 200, 200);
     transition: all .5s ease;
     text-align: center;
     font-family: "Roboto", sans-serif;
@@ -391,7 +392,7 @@ nav>ul>li:hover
     width:100%;
     display: grid;
     gap:6rem 2rem;
-    grid-template-columns: 1fr .2rem 1fr .2rem 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-top: 4rem;
    
 }
@@ -402,10 +403,6 @@ nav>ul>li:hover
     font-size: 3rem;
     font-weight: 900;
     font-family: "Roboto", sans-serif;
-}
-.verticalLine
-{
-    border-left: .2rem dashed grey;
 }
 .item2
 {
@@ -418,6 +415,7 @@ nav>ul>li:hover
     transition: all .5s ease;
     border:.3rem solid #111111;
     cursor: default;
+    
 }
 .item2>h4
 {
@@ -426,8 +424,9 @@ nav>ul>li:hover
 }
 .item2>p
 {
-    color: rgb(161, 161, 161);
+    color: rgb(180, 180, 180);
     transition: all .5s ease;
+    text-align: center;
 }
 .gitLogos
 {
@@ -513,7 +512,7 @@ nav>ul>li:hover
 }
 .devItem>p
 {
-    color: rgb(150, 150, 150);
+    color: rgb(160, 160, 160);
     display: flex;
     align-items: center;
 }
@@ -528,7 +527,7 @@ nav>ul>li:hover
 .developmentLine
 {
     width:90%;
-    border-top: .3rem dashed rgb(83, 83, 83);
+    border-top: .3rem dashed rgb(80, 80, 80);
 }
 
 
@@ -566,7 +565,7 @@ nav>ul>li:hover
 }
 .carouselItem>p
 {
-    color: rgb(167, 167, 167);
+    color: rgb(180, 180, 180);
 }
 .carouselItem>h3
 {
@@ -669,7 +668,7 @@ nav>ul>li:hover
 
 .projectsItem:hover>figcaption
 {
-    color: white;
+    color: rgb(220, 220, 220);
 }
 .projectsItem>header>h3
 {
@@ -679,8 +678,9 @@ nav>ul>li:hover
 }
 .projectsItem>figcaption
 {
-    color: grey;
-    transition: all .3s ease;
+    color: rgb(160, 160, 160);
+    transition: all .3s ease;   
+    text-align: center;
 }
 .projectsItem>button
 {
@@ -744,7 +744,7 @@ nav>ul>li:hover
 }
 .contact>p
 {
-    color: grey;
+    color: rgb(160, 160, 160);
     font-size: 1.3rem;
     text-align: center;
 }
@@ -754,7 +754,7 @@ nav>ul>li:hover
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    gap:2rem;
+    gap:1.5rem;
     grid-row: 2/4;
     grid-column: 2/3;
 }
@@ -770,7 +770,7 @@ nav>ul>li:hover
 {
     width:3.5rem;
     height: 3.5rem;
-    filter:brightness(0.5);
+    filter:brightness(0.6);
     transition: all .3s ease;
 }
 .socials>a>img:hover
@@ -783,7 +783,7 @@ nav>ul>li:hover
     width:.2rem;
     height: 3rem;
     border-radius: 10px;
-    background-color: grey;
+    background-color: rgb(160, 160, 160);
 }
 .mail
 {
@@ -792,7 +792,7 @@ nav>ul>li:hover
     align-items: center;
     gap:.6rem;
     width:100%;
-    color: grey;
+    color: rgb(160, 160, 160);
     cursor: default;
 }
 .mail>h3
@@ -802,17 +802,17 @@ nav>ul>li:hover
 }
 .mailSvg
 {
-    fill: grey;
+    fill: rgb(160, 160, 160);
     width:3rem;
     height: 3rem;
 }
 .mail:hover>h3
 {
-    color: rgb(201, 201, 201);
+    color: rgb(220, 220, 220);
 }
 .mail:hover>.mailSvg
 {
-    fill: rgb(201, 201, 201);
+    fill: rgb(220, 220, 220);
 }
 .inputContainer
 {
@@ -845,7 +845,7 @@ nav>ul>li:hover
 }
 .inputContainer>input::placeholder
 {
-    color: grey;
+    color: rgb(140, 140, 140);
     font-weight: 500;
 }
 .inputContainer>h3
@@ -856,13 +856,13 @@ nav>ul>li:hover
     font-size: 1.3rem;
     background-color: #111111;
     padding: 0 .3rem;
-    color: grey;
+    color: rgb(140, 140, 140);
     font-weight: 900;
     cursor: pointer;
 }
 .emailPlaceholderFocused
 {
-    color:rgb(208, 208, 208) !important;
+    color:rgb(220, 220, 220) !important;
 }
 .emailForm>textarea
 {
@@ -883,6 +883,7 @@ nav>ul>li:hover
 .emailForm>textarea::placeholder
 {
     font-weight: 900;
+    color: rgb(140, 140, 140);
 }
 .emailForm>textarea:focus
 {
