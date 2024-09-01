@@ -208,7 +208,7 @@ nav>ul>li:hover
 .imageTop>img
 {
     opacity: 0.9;
-    filter: grayscale(0.7) drop-shadow(.3rem 0 .3rem #2cbf04);
+    filter: grayscale(0.7);
 }
 .image>img
 {
@@ -264,7 +264,7 @@ nav>ul>li:hover
 {
     width: 100%;
     position: absolute;
-    bottom: 5rem;
+    bottom: 3rem;
     background-color: rgb(255, 0, 0);
     box-shadow: 0 0 2rem 2rem #111111 !important;
 
@@ -497,8 +497,8 @@ nav>ul>li:hover
 .devItem>img
 {
     grid-row: 1/3;
-    width:20rem;
-    height: 20rem;
+    width:17rem;
+    height: 17rem;
 }
 .devItem>h3
 {
@@ -515,6 +515,7 @@ nav>ul>li:hover
     color: rgb(160, 160, 160);
     display: flex;
     align-items: center;
+    text-align: center;
 }
 .devItemRevers
 {
@@ -603,6 +604,7 @@ nav>ul>li:hover
     transition: all .3s ease;
     font-weight: 900;
     font-size: 1.5rem;
+    outline: none;
 }
 .carouselItem>a:hover
 {
@@ -691,6 +693,7 @@ nav>ul>li:hover
     padding: .3rem 0;
     transition: all .3s ease;
     font-weight: 700;
+    outline: none;
 }
 .projectsItem:hover>button
 {
@@ -766,14 +769,19 @@ nav>ul>li:hover
     align-items: center;
     flex-wrap: wrap;
 }
-.socials>a>img
+.socials>a
 {
-    width:3.5rem;
-    height: 3.5rem;
+    outline: none;
+}
+.socials>a>svg
+{
+    fill: white;
+    width:3rem;
+    height: 3rem;
     filter:brightness(0.6);
     transition: all .3s ease;
 }
-.socials>a>img:hover
+.socials>a>svg:hover
 {
     filter:brightness(1);
     transform: scale(1.1);
@@ -803,8 +811,8 @@ nav>ul>li:hover
 .mailSvg
 {
     fill: rgb(160, 160, 160);
-    width:3rem;
-    height: 3rem;
+    width:2.5rem;
+    height: 2.5rem;
 }
 .mail:hover>h3
 {
@@ -971,7 +979,7 @@ footer>h2
     background-color: #111111;
     position: absolute;
     bottom: 0rem;
-    top: 5rem;
+    top: 8rem;
     right: -100%;
     width:50%;
     transition: all .5s ease;
