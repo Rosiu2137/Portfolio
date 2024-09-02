@@ -66,8 +66,6 @@ nav
     opacity: 0;
     transition: all .5s ease;
 
-    width:20px;
-
 }
 .upperShadow
 {
@@ -179,7 +177,7 @@ nav>ul>li:hover
     position: absolute;
     bottom: 0;
     box-shadow: 0 -1rem 3rem 3rem #111111 !important;
-    z-index: 1;
+    z-index: 2;
 }
 
 .about
@@ -233,7 +231,6 @@ nav>ul>li:hover
     font-weight: 900;
     margin-bottom: 1rem;
     text-shadow: .2rem .15rem 0 #2cbf04;
-    margin-bottom: 1rem;
 }
 .blockquote
 {
@@ -1025,3 +1022,240 @@ footer>h2
     opacity: 0;
     transition: opacity .5s ease;
 }
+.responsiveImage
+{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right:-20%;
+    width: 70%;
+    z-index: 1;
+}
+.responsiveImage>img
+{
+   width:100%;
+   filter: brightness(.6);
+}
+@media (max-width:445px) {
+    nav
+    {
+        justify-content: center;
+        padding: 2.5rem 0;
+    }
+    .logo
+    {
+        display: none;
+    }
+    nav>ul
+    {
+        font-size: 3.5rem; 
+        gap:4.5rem;
+    }
+    nav>ul>li:hover
+    {
+        color: white;
+    }
+    .navPointer
+    {
+        bottom: 1.5rem;
+        height: 1rem;
+    }
+    .upperShadow
+    {
+        box-shadow: 0 0 12rem 12rem #111111;
+    }
+    .header
+    {
+        height: 42vh;
+    }
+    .header>video
+    {
+        height: 100% !important;
+        width:auto;
+    }
+    .header>h1
+    {
+        font-size: 9rem;
+        text-shadow: 0 0 10rem #38f205;
+        position: relative;
+        right: 11rem;
+        bottom: 5rem;
+    }
+    .header>h2
+    {
+        font-size: 5rem;
+        position: relative;
+        right: 11rem;
+        font-weight: 900;
+        bottom: 5rem;
+    }
+    .image
+    {
+        display: none;
+    }
+    .responsiveImage
+    {
+        display: block;
+    }
+    .shadow
+    {
+        box-shadow: 0 -1rem 8rem 12rem #111111 !important;
+    }
+    .about
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .description
+    {
+        gap:3rem;
+        padding-bottom: 5rem;
+    }
+    .description>h2
+    {
+        font-size: 10rem;
+        text-shadow: .6rem .5rem 0 #2cbf04;
+    }
+    .description>p
+    {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .blockquote
+    {
+        font-size: 3.5rem;
+        margin-top: 5rem;
+        gap:2rem;
+    }
+    .blockquote>cite
+    {
+        font-size: 4rem;
+
+    }
+    .experienceHeader
+    {
+        font-size: 10rem;
+        text-shadow: .6rem .5rem 0 #2cbf04;
+        margin-bottom: 10rem;
+    }
+    .experience
+    {
+        background: url(../assets/img/tlores0.png) center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        position: static;
+        height: 260rem;
+        display: flex;
+        flex-direction: column;
+        gap:20rem;
+    }
+    .item
+    {
+        max-height: none;
+        border: 0;
+        position: static;
+        display: grid;
+        grid-template-columns: 40rem 1fr;
+        grid-template-rows: auto 1fr;
+        justify-items: center;
+
+        max-width: none;
+    }
+    .item>h3
+    {
+        font-size: 5rem;
+    }
+    .item>p
+    {
+        scale: 1;
+        font-size: 2.5rem;
+    }
+    .item>img
+    {
+        width:30rem;
+        height: 30rem;
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+    .item:hover
+    {
+        transform: none;
+        padding: 0;
+        width:100%;
+    }
+    .item:hover>h3
+    {
+        display: none;
+    }
+    .item:hover>img
+    {
+        width:40rem;
+        height: 40rem;
+    }
+    #htmlLogo
+    {
+        
+    }
+    #cssLogo
+    {
+        
+    }
+    #jsLogo
+    {
+        
+    }
+    #reactLogo
+    {
+       
+    }
+    #htmlLogo:hover
+    {
+        background: none;
+        border: 0;
+    }
+    #cssLogo:hover
+    {
+        background: none;
+        border: 0;
+    }
+    #jsLogo:hover
+    {
+        background: none;
+        border: 0;
+    }
+    #reactLogo:hover
+    {
+        background: none;
+        border: 0;
+    }
+    
+}
+
+
+/* .item
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:.3rem;
+    border: .3rem solid #111111;
+    overflow: hidden;
+    max-width:15rem;
+    max-height: 15rem;
+}
+.item>h3
+{
+    font-weight: 900;
+    font-size: 1.8rem;
+    font-family: "Noto Sans Thai", sans-serif;
+}
+.item>img
+{
+    width:14.5rem;
+    height: 14.5rem;
+    transition: all .5s ease;
+    margin-bottom: 1rem;
+} */
