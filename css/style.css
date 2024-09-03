@@ -490,6 +490,8 @@ nav>ul>li:hover
     grid-template-columns: 20rem 1fr;
     grid-template-rows: 5rem 1fr;
     gap: 0 2rem;
+    align-items: center;
+    justify-items: center;
 }
 .devItem>img
 {
@@ -527,7 +529,11 @@ nav>ul>li:hover
     width:90%;
     border-top: .3rem dashed rgb(80, 80, 80);
 }
-
+#typeScriptLogo
+{
+    width:15rem;
+    height: 15rem;
+}
 
 
 
@@ -1232,5 +1238,114 @@ footer>h2
         width: 30rem;
         height: 30rem;
     }
+    .additionalSkills
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:10rem;
+        padding: 0 2rem;
+        margin-top: 10rem;
+    }
+    .additionalSkills>h3
+    {
+        font-size: 9rem;
+        text-align: center;
+    }
+    .item2
+    {
+        border-radius: 5rem;
+        padding: 4rem 6rem;
+        gap:1.5rem;
+    }
+    #gitItem
+    {
+        background-color: #5d0f00 !important;
+        border: 1rem dotted #f05133 !important;
+    }
+    #bootstrapItem
+    {
+        background-color: #3a0074 !important;
+        border: 1rem dotted #8712fb !important;
+    }
+    #firebaseItem
+    {
+        background-color: #813e00 !important;
+        border: 1rem dotted #dd6447 !important;
+    }
+    .item2>h4
+    {
+        font-size: 7rem;
+        font-weight: 900;
+    }
+    .item2>p
+    {
+        font-size: 3.5rem;
+        color: rgb(210, 210, 210) !important;
+    }
+    .gitLogos
+    {
+        gap:5rem;
+        margin-bottom: 2rem;
+    }
+    .gitLogos>img
+    {
+        width:25rem;
+        height: 25rem;
+        transition: all .5s ease;
+    }
+    .additionalSkillsImage
+    {
+        width:35rem;
+        height: 35rem;
+    }
 
+    .item2:hover>.gitLogos>img,
+    .item2:hover>.additionalSkillsImage
+    {
+        transform: none;
+    }
+    .development
+    {
+        gap:0;
+        padding: 0 2rem;
+    }
+    .development>h2
+    {
+        font-size: 10rem;
+        text-shadow: .6rem .5rem 0 #2cbf04;
+
+    }
+    .devItem
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:2rem;
+    }
+    .devItem>img
+    {
+        width:60rem;
+        height: 60rem;
+    }
+    .devItem>h3
+    {
+        display: none;
+    }
+    .devItem>p
+    {
+        font-size: 3.5rem;
+    }
+    .developmentLine
+    {
+        width:100%;
+        border-top: .8rem dashed rgb(80, 80, 80);
+        margin: 8rem 0;
+    }
+    #typeScriptLogo
+    {
+        width:40rem;
+        height: 40rem;
+        margin-bottom: 5rem;
+    }
 }
