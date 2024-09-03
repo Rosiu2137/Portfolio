@@ -1246,6 +1246,7 @@ footer>h2
         gap:10rem;
         padding: 0 2rem;
         margin-top: 10rem;
+        
     }
     .additionalSkills>h3
     {
@@ -1309,6 +1310,7 @@ footer>h2
     {
         gap:0;
         padding: 0 2rem;
+        margin-top: 8rem;
     }
     .development>h2
     {
@@ -1347,5 +1349,144 @@ footer>h2
         width:40rem;
         height: 40rem;
         margin-bottom: 5rem;
+    }
+
+
+
+
+    .mainProjects
+    {
+        gap:10rem;
+        margin-top: 5rem;
+    }
+    .mainProjects>h2
+    {
+        font-size: 10rem;
+        text-shadow: .6rem .5rem 0 #2cbf04;
+    }
+    .carousel
+    {
+        border-radius: 0;
+    }
+    .carouselItem
+    {
+        width:100%;
+        display: flex !important;
+        flex-direction: column !important;
+        gap:1rem;
+        align-items: center;
+        justify-content: space-between !important;
+        height: 100% !important;
+        padding: 0;
+
+        height: 132rem !important; 
+    }
+    .carouselItem>p
+    {
+        color: rgb(180, 180, 180);
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .carouselItem>h3
+    {
+        font-size: 8rem;
+        text-shadow: 0 0 .8rem #38f205;
+        margin: 0;
+    }
+    .carouselItem>img
+    {
+        width: 100% !important;
+        border-radius: 3rem;
+        box-shadow: none;
+    }
+    .carouselItem>a
+    {
+        box-shadow: 0 0 2rem 0rem #2cbf04;
+        background-color: #218c03 !important;
+        border: 1rem solid #2cbf04;
+        border-radius: 3rem;
+        width:90%;
+        height: max-content;
+        font-size: 5rem;
+        padding: 1rem;
+    }
+    .arrow1
+    {
+        width:10rem;
+        left: -1rem;
+        opacity: 0.5;
+    }
+    .arrow2
+    {
+        width:10rem;
+        right: -1rem;
+        opacity: 0.5;
+        
+    }
+    .arrow1>:first-child,
+    .arrow2>:first-child
+    {
+       width:0rem;
+       height: 0rem;
+       position: relative;
+       top:-10rem;
+    }
+    .arrow1:hover>:first-child,
+    .arrow2:hover>:first-child
+    {
+        opacity: .5;
+    }
+    
+
+    .otherProjects
+    {
+        grid-template-columns: 1fr;
+        gap:10rem 5rem;
+        padding: 0 1rem;
+        margin-top: 8rem;
+    }
+    .otherProjects>h2
+    {
+        grid-column: 1/2;
+        font-size: 8rem;
+    }
+    .projectsItem
+    {
+        padding: 1rem;
+        gap:3rem;
+        border: 0;
+    }
+
+    .projectsItem>header>h3
+    {
+        font-size: 6rem;
+    }
+    .projectsItem>figcaption
+    {
+        color: rgb(160, 160, 160) !important;
+        font-size: 3.5rem;
+    }
+    .projectsItem>button
+    {
+        background-color: rgb(75, 75, 75) !important;
+        border: 1rem solid rgb(105, 105, 105) !important;
+        border-radius: 3rem;
+        padding: 1rem 0;
+        font-size: 5rem;
+    }
+    .projectsItem>header
+    {
+        gap:3rem;
+    }
+    .projectsItem>header>img
+    {
+        width:100%;
+        border-radius: 3rem;
+        filter: none;
+    }
+    .projectsItem:hover>header>img
+    {
+        filter: none;
+        transform: none;
     }
 }
