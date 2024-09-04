@@ -1529,7 +1529,7 @@ footer>h2
     {
         margin: 5rem 0;
         order:4;
-        gap:3rem 2.5rem;
+        gap:3rem 3rem;
     }
     .socials>a>svg
     {
@@ -1626,91 +1626,61 @@ footer>h2
         background-color: grey !important;
         border: 1rem solid rgb(85, 85, 85) !important;
     }
-
-    
     .error
     {
-        color: red;
-        display: none;
-        padding-left: 2rem;
-        font-weight: 900;
-        margin-top: -.5rem;
+        padding-left: 3rem;
+        margin-top: 0rem;
+        font-size: 3.5rem;
     }
     .backendError
     {
-        justify-content: center !important;
-        display: flex !important;
+        text-align: center;
     }
+
     .sendSuccess
     {
-        background-color: #111111;
-        position: absolute;
-        bottom: 0rem;
-        top: 8rem;
-        right: -100%;
-        width:50%;
-        transition: all .5s ease;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap:2rem;
-        box-shadow: 0 2rem 1rem 1rem #111111;
-
-    }
-    .sendSuccessDisplay
-    {
-        right: 0;
+        bottom: 35rem;
+        top: 57rem;
+        width:100%;
+        gap:5rem;
+        box-shadow: none;
     }
     .sendSuccess>button
     {
-        font-size: 1.5rem;
-        background: #0f4001;
-        border:.3rem solid #218c03;
-        border-radius: 1rem;
-        outline: none;
-        padding: .5rem;
-        font-weight: 700;
-        transition: all .3s ease, opacity .5s ease;
+        font-size: 6rem;
+        background: #0f4001 !important;
+        border:1rem solid #218c03;
+        border-radius: 3rem;
+        padding: 1rem;
         width:80%;
-        opacity: 0;
     }
     .sendSuccess>button:hover
     {
-        background: #218c03;
-        box-shadow: 0 0 .5rem 0rem #218c03;
+        box-shadow: none;
     }
     .svgOk
     {
-        width:5rem;
-        height: 5rem;
-        opacity: 0;
-        transition: opacity .5s ease;
+        width:25rem;
+        height: 25rem;
     }
     #sendSuccessMessage
     {
-        opacity: 0;
-        transition: opacity .5s ease;
+        font-size: 5rem;
+        font-weight: 900;
+        text-align: center;
     }
-
-
     footer
     {
-        width:100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap:1rem;
-        padding: 6rem 0 3rem 0;
+        gap:2rem;
+        padding: 0rem 0 5rem 0;
     }
     footer>img
     {
-        width:5rem;
-        height: 5rem;
+        width:15rem;
+        height: 15rem;
     }
     footer>h2
     {
-        font-size: 2.5rem;
-        font-weight: 900;
+        font-size:4.5rem;
     }
 }

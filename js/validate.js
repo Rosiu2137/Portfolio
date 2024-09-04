@@ -49,14 +49,32 @@ const setErrors = ()=>
     const messageError = document.querySelector("#messageError")
     const emailForm = document.querySelector(".emailForm")
     messageError.classList.remove('backendError')
+
     if(error.email || error.message)
     {
-        emailForm.style.gap = `0.8rem`
+        if(window.innerWidth > 445)
+        {
+            emailForm.style.gap = `0.8rem`
+            
+        }
+        else
+        {
+            emailForm.style.gap = `2rem`
+
+        }
     }
     else
     {
-         emailForm.style.gap = `2rem`
+        if(window.innerWidth > 445)
+        {
+            emailForm.style.gap = `2rem`
+        }
+        else
+        {
+            emailForm.style.gap = `5rem`
+        }
     }
+
     if(error.email)
     {
         emailErrorDiv.innerHTML = error.email

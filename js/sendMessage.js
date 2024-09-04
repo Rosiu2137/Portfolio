@@ -24,7 +24,8 @@ const sendError = ()=>
     button.disabled = false
     errorPlace.innerHTML = 'Wystąpił bład serwera. Spróbuj ponownie później'
     errorPlace.classList.add('backendError')
-    emailForm.style.gap = `0.8rem`
+    
+    emailForm.style.gap = window.innerWidth > 445?`0.8rem`:`2rem`
 }
 
 export const sendMessage = async(email,message)=>
