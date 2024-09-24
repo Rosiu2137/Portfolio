@@ -575,7 +575,7 @@ nav>ul>li:hover
     font-weight: 900;
     text-shadow: .2rem .15rem 0 #2cbf04;
 }
-#projects
+.projectsScaleInit
 {
     transform: scale(0);
     opacity: 0;
@@ -1045,6 +1045,7 @@ footer>h2
     justify-content: center;
     gap:2rem;
     box-shadow: 0 2rem 1rem 1rem #111111;
+    z-index: 8;
 
 }
 .sendSuccessDisplay
@@ -1204,16 +1205,17 @@ footer>h2
         font-size: 3rem;
         text-align: center;
     }
-    .blockquote
+    .blockquote>blockquote
     {
-        font-size: 3.5rem;
+        font-size: 4rem;
         margin-top: 5rem;
         gap:2rem;
     }
-    .blockquote>cite
+    .blockquote>.author
     {
-        font-size: 4rem;
-
+        font-size: 5rem;
+        margin-top: 4rem;
+        margin-bottom: 3rem;
     }
     .experienceHeader
     {
@@ -1254,8 +1256,13 @@ footer>h2
         max-height: max-content;
         border-radius: 3rem;
         padding: 3rem 1rem;
-
         border: .8rem solid #11111100;
+    }
+    .item>h3,
+    .item>p
+    {
+        opacity: 0;
+        transition: all 2s ease;
     }
     .item>h3
     {
@@ -1388,6 +1395,10 @@ footer>h2
         padding: 0 2rem;
         margin-top: 8rem;
     }
+    .devItemRevers
+    {
+        margin: 10rem 0;
+    }
     .development>h2
     {
         font-size: 10rem;
@@ -1422,8 +1433,8 @@ footer>h2
     }
     #typeScriptLogo
     {
-        width:40rem;
-        height: 40rem;
+        width:35rem;
+        height: 35rem;
         margin-bottom: 5rem;
     }
 
@@ -1707,6 +1718,8 @@ footer>h2
         padding-left: 3rem;
         margin-top: 0rem;
         font-size: 3.5rem;
+        text-align: center;
+        justify-content: center;
     }
     .backendError
     {
@@ -1748,7 +1761,7 @@ footer>h2
     footer
     {
         gap:2rem;
-        padding: 0rem 0 5rem 0;
+        padding: 0rem 0 8rem 0;
     }
     footer>img
     {
@@ -1758,5 +1771,13 @@ footer>h2
     footer>h2
     {
         font-size:4.5rem;
+    }
+    .developmentLine
+    {
+        display: none;
+    }
+    .projectsScaleInit
+    {
+        transform: scale(1);
     }
 }

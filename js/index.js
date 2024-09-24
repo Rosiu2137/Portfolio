@@ -1,5 +1,5 @@
 document.querySelector("#video").play()
-
+window.scrollTo(0,0)
 import './firebaseConfig.js'
 import './windowScroll.js'
 import './logoScroll.js'

@@ -19,13 +19,17 @@ const socialsLine = document.querySelector(".socialsLine")
 const githubIcon = document.querySelector('#githubIcon')
 const facebookIcon = document.querySelector("#facebookIcon")
 const footer = document.querySelector("footer")
+const htmlLogo = document.querySelector("#htmlLogo")
+const cssLogo = document.querySelector("#cssLogo")
+const jsLogo = document.querySelector("#jsLogo")
+const reactLogo = document.querySelector("#reactLogo")
+const socials = document.querySelector(".socials")
 const devItems = [...document.querySelectorAll(".devItem")]
 const projectsItem = [...document.querySelectorAll(".projectsItem")]
-let blockquoteAnimation, additionalSkillsAnimation, devItemsAnimation0, devItemsAnimation1, devItemsAnimation2, projectsAnimation, otherProjectsAnimation,contactAnimation,footerAnimation
+let blockquoteAnimation, additionalSkillsAnimation, devItemsAnimation0, devItemsAnimation1, devItemsAnimation2, projectsAnimation, otherProjectsAnimation,contactAnimation,footerAnimation, socialsAnimation
 
 const startAnimation = ()=>
 {
-    window.scrollTo(0,0)
     setTimeout(() => {
         nav.classList.add('opacityClass')
     }, 200);
@@ -40,6 +44,15 @@ const startAnimation = ()=>
     }, 1300);
 }
 
+
+const itemAnimation = (item)=>
+{
+    item.children[1].classList.add("additionalSkillsOpacity")
+    setTimeout(() => {
+        item.children[2].classList.add("additionalSkillsOpacity")
+    }, 200);
+}
+
 const windowScroll = (e)=>
 {
     if(blockquote.getBoundingClientRect().top / window.innerHeight < 0.75 && !blockquoteAnimation)
@@ -51,17 +64,6 @@ const windowScroll = (e)=>
         }, 500);
         
         blockquoteAnimation = true
-    }
-    if(additionalSkills.getBoundingClientRect().top / window.innerHeight < 0.4 && !additionalSkillsAnimation)
-    {
-        gitItem.classList.add("additionalSkillsOpacity")
-        setTimeout(() => {
-            bootstrapItem.classList.add("additionalSkillsOpacity")
-        }, 500)
-        setTimeout(() => {
-            firebaseItem.classList.add("additionalSkillsOpacity")
-        }, 1000);
-        additionalSkillsAnimation = true
     }
     if(devItems[0].getBoundingClientRect().top / window.innerHeight < 0.6 && !devItemsAnimation0)
     {
@@ -78,53 +80,150 @@ const windowScroll = (e)=>
         devItems[2].classList.add("descriptionAnimation")
         devItemsAnimation2 = true
     }
-    if(projects.getBoundingClientRect().top / window.innerHeight < 0.85 && !projectsAnimation)
+    if(projects.getBoundingClientRect().top / window.innerHeight < 0.7 && !projectsAnimation)
     {
         projects.classList.add("projectsScale")
         projectsAnimation = true
     }
-    if(otherProjects.getBoundingClientRect().top / window.innerHeight < 0.4 && !otherProjectsAnimation)
-    {
-        projectsItem[0].classList.add('projectsScale')
-        setTimeout(() => {
-            projectsItem[1].classList.add('projectsScale')
-        }, 300);
-        setTimeout(() => {
-            projectsItem[2].classList.add('projectsScale')
-        }, 600);
-        setTimeout(() => {
-            projectsItem[3].classList.add('projectsScale')
-        }, 900);
-        otherProjectsAnimation = true
-    }
-    if(contact.getBoundingClientRect().top / window.innerHeight < 0.7 && !contactAnimation)
-    {
-        contactHeader.classList.add('additionalSkillsOpacity')
-        setTimeout(() => {
-            contactDescription.classList.add('contactDescription')
-        }, 200);
-        setTimeout(() => {
-            form.classList.add('contactDescription')
-        }, 400);
 
-        setTimeout(() => {
-            mail.classList.add('opacityClass')
-        }, 800);
-        setTimeout(() => {
-            githubIcon.classList.add('projectsScale')
-        }, 1200);
-        setTimeout(() => {
-            socialsLine.classList.add('opacityClass')
-        }, 1400);
-        setTimeout(() => {
-            facebookIcon.classList.add('projectsScale')
-        }, 1600);
-        contactAnimation = true
-    }
-    if(contact.getBoundingClientRect().top / window.innerHeight < 0.45 && !footerAnimation)
+
+
+
+
+    if(window.innerWidth <= 445)
     {
-        footer.classList.add("opacityClass")
-        footerAnimation = true
+        if(htmlLogo.getBoundingClientRect().top / window.innerHeight < 0.45 && !htmlLogo.classList.contains("additionalSkillsOpacity"))
+        {
+            itemAnimation(htmlLogo)
+        }
+        if(cssLogo.getBoundingClientRect().top / window.innerHeight < 0.45 && !cssLogo.classList.contains("additionalSkillsOpacity"))
+        {
+            itemAnimation(cssLogo)
+        }
+        if(jsLogo.getBoundingClientRect().top / window.innerHeight < 0.45 && !jsLogo.classList.contains("additionalSkillsOpacity"))
+        {
+            itemAnimation(jsLogo)
+        }
+        if(reactLogo.getBoundingClientRect().top / window.innerHeight < 0.45 && !reactLogo.classList.contains("additionalSkillsOpacity"))
+        {
+            itemAnimation(reactLogo)
+        }
+        if(gitItem.getBoundingClientRect().top / window.innerHeight < 0.45 && !gitItem.classList.contains("additionalSkillsOpacity"))
+        {
+            gitItem.classList.add("additionalSkillsOpacity")
+        }
+        if(bootstrapItem.getBoundingClientRect().top / window.innerHeight < 0.45 && !bootstrapItem.classList.contains("additionalSkillsOpacity"))
+        {
+            bootstrapItem.classList.add("additionalSkillsOpacity")
+        }
+        if(firebaseItem.getBoundingClientRect().top / window.innerHeight < 0.45 && !firebaseItem.classList.contains("additionalSkillsOpacity"))
+        {
+            firebaseItem.classList.add("additionalSkillsOpacity")
+        }
+        if(projectsItem[0].getBoundingClientRect().top / window.innerHeight < 0.7 && !projectsItem[0].classList.contains("projectsScale"))
+        {
+            projectsItem[0].classList.add("projectsScale")
+        }
+        if(projectsItem[1].getBoundingClientRect().top / window.innerHeight < 0.7 && !projectsItem[1].classList.contains("projectsScale"))
+        {
+            projectsItem[1].classList.add("projectsScale")
+        }
+        if(projectsItem[2].getBoundingClientRect().top / window.innerHeight < 0.7 && !projectsItem[2].classList.contains("projectsScale"))
+        {
+            projectsItem[2].classList.add("projectsScale")
+        }
+        if(projectsItem[3].getBoundingClientRect().top / window.innerHeight < 0.7 && !projectsItem[3].classList.contains("projectsScale"))
+        {
+            projectsItem[3].classList.add("projectsScale")
+        }
+        if(contact.getBoundingClientRect().top / window.innerHeight < 0.7 && !contactAnimation)
+        {
+            contactHeader.classList.add('additionalSkillsOpacity')
+            setTimeout(() => {
+                contactDescription.classList.add('contactDescription')
+            }, 200);
+            setTimeout(() => {
+                form.classList.add('contactDescription')
+            }, 400);
+            contactAnimation = true
+        }
+        if(socials.getBoundingClientRect().top / window.innerHeight < 0.9 && !socialsAnimation)
+        {
+            setTimeout(() => {
+                mail.classList.add('opacityClass')
+            }, 400);
+            setTimeout(() => {
+                githubIcon.classList.add('projectsScale')
+            }, 800);
+            setTimeout(() => {
+                socialsLine.classList.add('opacityClass')
+            }, 1200);
+            setTimeout(() => {
+                facebookIcon.classList.add('projectsScale')
+            }, 1400);
+        }
+        if(footer.getBoundingClientRect().top / window.innerHeight < 1 && !footerAnimation)
+        {
+            footer.classList.add("opacityClass")
+            footerAnimation = true
+        }
+    }
+    else
+    {
+        if(additionalSkills.getBoundingClientRect().top / window.innerHeight < 0.4 && !additionalSkillsAnimation)
+        {
+            gitItem.classList.add("additionalSkillsOpacity")
+            setTimeout(() => {
+                bootstrapItem.classList.add("additionalSkillsOpacity")
+            }, 500)
+            setTimeout(() => {
+                firebaseItem.classList.add("additionalSkillsOpacity")
+            }, 1000);
+            additionalSkillsAnimation = true
+        }
+        if(otherProjects.getBoundingClientRect().top / window.innerHeight < 0.4 && !otherProjectsAnimation)
+        {
+            projectsItem[0].classList.add('projectsScale')
+            setTimeout(() => {
+                projectsItem[1].classList.add('projectsScale')
+            }, 300);
+            setTimeout(() => {
+                projectsItem[2].classList.add('projectsScale')
+            }, 600);
+            setTimeout(() => {
+                projectsItem[3].classList.add('projectsScale')
+            }, 900);
+            otherProjectsAnimation = true
+        }
+        if(contact.getBoundingClientRect().top / window.innerHeight < 0.7 && !contactAnimation)
+            {
+                contactHeader.classList.add('additionalSkillsOpacity')
+                setTimeout(() => {
+                    contactDescription.classList.add('contactDescription')
+                }, 200);
+                setTimeout(() => {
+                    form.classList.add('contactDescription')
+                }, 400);
+        
+                setTimeout(() => {
+                    mail.classList.add('opacityClass')
+                }, 800);
+                setTimeout(() => {
+                    githubIcon.classList.add('projectsScale')
+                }, 1200);
+                setTimeout(() => {
+                    socialsLine.classList.add('opacityClass')
+                }, 1400);
+                setTimeout(() => {
+                    facebookIcon.classList.add('projectsScale')
+                }, 1600);
+                contactAnimation = true
+            }
+        if(footer.getBoundingClientRect().top / window.innerHeight < 0.8 && !footerAnimation)
+        {
+            footer.classList.add("opacityClass")
+            footerAnimation = true
+        }
     }
 }
 
