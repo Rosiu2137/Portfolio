@@ -4,7 +4,12 @@ const nav = document.querySelector('nav')
 const description = document.querySelector('.description')
 const blockquote = document.querySelector("#blockquote")
 const author = document.querySelector(".author")
-let blockquoteAnimation
+const additionalSkills = document.querySelector(".additionalSkills")
+const gitItem = document.querySelector("#gitItem")
+const bootstrapItem = document.querySelector("#bootstrapItem")
+const firebaseItem = document.querySelector("#firebaseItem")
+
+let blockquoteAnimation, additionalSkillsAnimation
 
 const startAnimation = ()=>
 {
@@ -35,6 +40,17 @@ const windowScroll = (e)=>
         }, 500);
         
         blockquoteAnimation = true
+    }
+    if(additionalSkills.getBoundingClientRect().top / window.innerHeight < 0.4 && !additionalSkillsAnimation)
+    {
+        gitItem.classList.add("additionalSkillsOpacity")
+        setTimeout(() => {
+            bootstrapItem.classList.add("additionalSkillsOpacity")
+        }, 500)
+        setTimeout(() => {
+            firebaseItem.classList.add("additionalSkillsOpacity")
+        }, 1000);
+        additionalSkillsAnimation = true
     }
 }
 

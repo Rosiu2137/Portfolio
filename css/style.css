@@ -452,12 +452,19 @@ nav>ul>li:hover
     width:10rem;
     height: 10rem;
     transition: all .5s ease;
-  
+}
+#firebaseItem,
+#bootstrapItem,
+#gitItem
+{
+    opacity: 0;
+    transition: all .5s ease, opacity 1.5s ease;
 }
 #gitItem:hover
 {
     background-color: #5d0f00;
     border: .3rem solid #f05133;
+    
 }
 #bootstrapItem:hover
 {
@@ -1066,6 +1073,10 @@ footer>h2
 {
     transform: translate(0);
     opacity: 1;
+}
+.additionalSkillsOpacity
+{
+    opacity: 1 !important;
 }
 @media (max-width:445px) {
     nav
