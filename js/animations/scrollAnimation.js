@@ -8,8 +8,8 @@ const additionalSkills = document.querySelector(".additionalSkills")
 const gitItem = document.querySelector("#gitItem")
 const bootstrapItem = document.querySelector("#bootstrapItem")
 const firebaseItem = document.querySelector("#firebaseItem")
-
-let blockquoteAnimation, additionalSkillsAnimation
+const devItems = [...document.querySelectorAll(".devItem")]
+let blockquoteAnimation, additionalSkillsAnimation, devItemsAnimation0, devItemsAnimation1, devItemsAnimation2
 
 const startAnimation = ()=>
 {
@@ -51,6 +51,24 @@ const windowScroll = (e)=>
             firebaseItem.classList.add("additionalSkillsOpacity")
         }, 1000);
         additionalSkillsAnimation = true
+    }
+    if(devItems[0].getBoundingClientRect().top / window.innerHeight < 0.4 && !devItemsAnimation0)
+    {
+        devItems[0].classList.add("descriptionAnimation")
+        devItemsAnimation0 = true
+        console.log("0")
+    }
+    if(devItems[1].getBoundingClientRect().top / window.innerHeight < 0.4 && !devItemsAnimation1)
+    {
+        devItems[1].classList.add("descriptionAnimation")
+        devItemsAnimation1 = true
+        console.log("1")
+    }
+    if(devItems[2].getBoundingClientRect().top / window.innerHeight < 0.4 && !devItemsAnimation2)
+    {
+        devItems[2].classList.add("descriptionAnimation")
+        devItemsAnimation2 = true
+        console.log("2")
     }
 }
 

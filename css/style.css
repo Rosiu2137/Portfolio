@@ -495,6 +495,7 @@ nav>ul>li:hover
     gap:4rem;
     align-items: center;
     margin-top: 3rem;
+    overflow: hidden;
 }
 .development>h2
 {
@@ -510,6 +511,9 @@ nav>ul>li:hover
     gap: 0 2rem;
     align-items: center;
     justify-items: center;
+    opacity: 0;
+    transition: all 1s ease;
+    transform: translate(100%);
 }
 .devItem>img
 {
@@ -537,6 +541,7 @@ nav>ul>li:hover
 .devItemRevers
 {
     grid-template-columns: 1fr 20rem;
+    transform: translate(-100%);
 }
 .devItemRevers>img
 {
