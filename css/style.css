@@ -293,7 +293,7 @@ nav>ul>li:hover
 }
 .experience
 {
-    background: url(../assets/img/tloooo.png) center;
+    background: url(../assets/img/background.png) center;
     background-size: contain;
     width:90rem;
     height: 90rem;
@@ -1229,7 +1229,7 @@ footer>h2
 
     .experience
     {
-        background: url(../assets/img/tlo30.png) center;
+        background: url(../assets/img/backgroundResponsive.png) center;
         background-size: contain;
 
         width:100%;
