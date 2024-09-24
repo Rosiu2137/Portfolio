@@ -18,9 +18,10 @@ const mail = document.querySelector(".mail")
 const socialsLine = document.querySelector(".socialsLine")
 const githubIcon = document.querySelector('#githubIcon')
 const facebookIcon = document.querySelector("#facebookIcon")
+const footer = document.querySelector("footer")
 const devItems = [...document.querySelectorAll(".devItem")]
 const projectsItem = [...document.querySelectorAll(".projectsItem")]
-let blockquoteAnimation, additionalSkillsAnimation, devItemsAnimation0, devItemsAnimation1, devItemsAnimation2, projectsAnimation, otherProjectsAnimation,contactAnimation
+let blockquoteAnimation, additionalSkillsAnimation, devItemsAnimation0, devItemsAnimation1, devItemsAnimation2, projectsAnimation, otherProjectsAnimation,contactAnimation,footerAnimation
 
 const startAnimation = ()=>
 {
@@ -119,6 +120,11 @@ const windowScroll = (e)=>
             facebookIcon.classList.add('projectsScale')
         }, 1600);
         contactAnimation = true
+    }
+    if(contact.getBoundingClientRect().top / window.innerHeight < 0.45 && !footerAnimation)
+    {
+        footer.classList.add("opacityClass")
+        footerAnimation = true
     }
 }
 
