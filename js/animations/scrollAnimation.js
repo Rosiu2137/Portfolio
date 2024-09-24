@@ -8,8 +8,11 @@ const additionalSkills = document.querySelector(".additionalSkills")
 const gitItem = document.querySelector("#gitItem")
 const bootstrapItem = document.querySelector("#bootstrapItem")
 const firebaseItem = document.querySelector("#firebaseItem")
+const projects = document.querySelector("#projects")
 const devItems = [...document.querySelectorAll(".devItem")]
-let blockquoteAnimation, additionalSkillsAnimation, devItemsAnimation0, devItemsAnimation1, devItemsAnimation2
+const projectsItem = [...document.querySelectorAll(".projectsItem")]
+const otherProjects = document.querySelector('.otherProjects')
+let blockquoteAnimation, additionalSkillsAnimation, devItemsAnimation0, devItemsAnimation1, devItemsAnimation2, projectsAnimation, otherProjectsAnimation
 
 const startAnimation = ()=>
 {
@@ -33,7 +36,6 @@ const windowScroll = (e)=>
     if(blockquote.getBoundingClientRect().top / window.innerHeight < 0.75 && !blockquoteAnimation)
     {
         blockquote.style.opacity = `1`
-        console.log(author)
         setTimeout(() => {
             author.style.opacity = `1`
             
@@ -52,23 +54,39 @@ const windowScroll = (e)=>
         }, 1000);
         additionalSkillsAnimation = true
     }
-    if(devItems[0].getBoundingClientRect().top / window.innerHeight < 0.4 && !devItemsAnimation0)
+    if(devItems[0].getBoundingClientRect().top / window.innerHeight < 0.6 && !devItemsAnimation0)
     {
         devItems[0].classList.add("descriptionAnimation")
         devItemsAnimation0 = true
-        console.log("0")
     }
-    if(devItems[1].getBoundingClientRect().top / window.innerHeight < 0.4 && !devItemsAnimation1)
+    if(devItems[1].getBoundingClientRect().top / window.innerHeight < 0.6 && !devItemsAnimation1)
     {
         devItems[1].classList.add("descriptionAnimation")
         devItemsAnimation1 = true
-        console.log("1")
     }
-    if(devItems[2].getBoundingClientRect().top / window.innerHeight < 0.4 && !devItemsAnimation2)
+    if(devItems[2].getBoundingClientRect().top / window.innerHeight < 0.6 && !devItemsAnimation2)
     {
         devItems[2].classList.add("descriptionAnimation")
         devItemsAnimation2 = true
-        console.log("2")
+    }
+    if(projects.getBoundingClientRect().top / window.innerHeight < 0.85 && !projectsAnimation)
+    {
+        projects.classList.add("projectsScale")
+        projectsAnimation = true
+    }
+    if(otherProjects.getBoundingClientRect().top / window.innerHeight < 0.4 && !otherProjectsAnimation)
+    {
+        projectsItem[0].classList.add('projectsScale')
+        setTimeout(() => {
+            projectsItem[1].classList.add('projectsScale')
+        }, 300);
+        setTimeout(() => {
+            projectsItem[2].classList.add('projectsScale')
+        }, 600);
+        setTimeout(() => {
+            projectsItem[3].classList.add('projectsScale')
+        }, 900);
+        otherProjectsAnimation = true
     }
 }
 
