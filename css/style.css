@@ -783,12 +783,17 @@ nav>ul>li:hover
     margin-bottom: 2rem;
     font-weight: 900;
     text-shadow: .2rem .15rem 0 #2cbf04;
+    opacity: 0;
+    transition: opacity 1s ease;
 }
 .contact>p
 {
     color: rgb(160, 160, 160);
     font-size: 1.3rem;
     text-align: center;
+    transform: translate(-100%);
+    opacity: 0;
+    transition: all 1s ease;
 }
 .emailForm
 {
@@ -799,6 +804,9 @@ nav>ul>li:hover
     gap:1.5rem;
     grid-row: 2/4;
     grid-column: 2/3;
+    opacity: 0;
+    transform: translate(100%);
+    transition: all 1s ease;
 }
 .socials
 {
@@ -811,6 +819,9 @@ nav>ul>li:hover
 .socials>a
 {
     outline: none;
+    transform: scale(0);
+    opacity: 0;
+    transition: all .5s ease;
 }
 .socials>a>svg
 {
@@ -831,6 +842,8 @@ nav>ul>li:hover
     height: 3rem;
     border-radius: 10px;
     background-color: rgb(160, 160, 160);
+    opacity: 0;
+    transition: all 1s ease;
 }
 .mail
 {
@@ -841,6 +854,8 @@ nav>ul>li:hover
     width:100%;
     color: rgb(160, 160, 160);
     cursor: default;
+    opacity: 0;
+    transition: opacity 2s ease;
 }
 .mail>h3
 {
@@ -1094,6 +1109,11 @@ footer>h2
 .projectsScale
 {
     transform: scale(1) !important;
+    opacity: 1 !important;
+}
+.contactDescription
+{
+    transform: translate(0) !important;
     opacity: 1 !important;
 }
 @media (max-width:445px) {

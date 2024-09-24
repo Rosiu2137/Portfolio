@@ -9,10 +9,18 @@ const gitItem = document.querySelector("#gitItem")
 const bootstrapItem = document.querySelector("#bootstrapItem")
 const firebaseItem = document.querySelector("#firebaseItem")
 const projects = document.querySelector("#projects")
+const otherProjects = document.querySelector('.otherProjects')
+const contact = document.querySelector("#contact")
+const contactHeader = document.querySelector("#contactHeader")
+const contactDescription = document.querySelector('#contactDescription')
+const form = document.querySelector("#form")
+const mail = document.querySelector(".mail")
+const socialsLine = document.querySelector(".socialsLine")
+const githubIcon = document.querySelector('#githubIcon')
+const facebookIcon = document.querySelector("#facebookIcon")
 const devItems = [...document.querySelectorAll(".devItem")]
 const projectsItem = [...document.querySelectorAll(".projectsItem")]
-const otherProjects = document.querySelector('.otherProjects')
-let blockquoteAnimation, additionalSkillsAnimation, devItemsAnimation0, devItemsAnimation1, devItemsAnimation2, projectsAnimation, otherProjectsAnimation
+let blockquoteAnimation, additionalSkillsAnimation, devItemsAnimation0, devItemsAnimation1, devItemsAnimation2, projectsAnimation, otherProjectsAnimation,contactAnimation
 
 const startAnimation = ()=>
 {
@@ -87,6 +95,30 @@ const windowScroll = (e)=>
             projectsItem[3].classList.add('projectsScale')
         }, 900);
         otherProjectsAnimation = true
+    }
+    if(contact.getBoundingClientRect().top / window.innerHeight < 0.7 && !contactAnimation)
+    {
+        contactHeader.classList.add('additionalSkillsOpacity')
+        setTimeout(() => {
+            contactDescription.classList.add('contactDescription')
+        }, 200);
+        setTimeout(() => {
+            form.classList.add('contactDescription')
+        }, 400);
+
+        setTimeout(() => {
+            mail.classList.add('opacityClass')
+        }, 800);
+        setTimeout(() => {
+            githubIcon.classList.add('projectsScale')
+        }, 1200);
+        setTimeout(() => {
+            socialsLine.classList.add('opacityClass')
+        }, 1400);
+        setTimeout(() => {
+            facebookIcon.classList.add('projectsScale')
+        }, 1600);
+        contactAnimation = true
     }
 }
 
