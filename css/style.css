@@ -54,6 +54,7 @@ nav
     display: flex;
     justify-content: space-between;
     padding: .5rem 1rem;
+    opacity: 0;
     transition: all 1s ease;
 }
 .navPointer
@@ -144,6 +145,8 @@ nav>ul>li:hover
     align-items: center;
     overflow: hidden;
     position:relative;
+    transition: opacity 1s ease;
+    opacity: 0;
 }
 .header>video
 {
@@ -196,7 +199,7 @@ nav>ul>li:hover
     z-index: 2;
     top:0%;
     transition: all 1.5s ease;
-    opacity: 1;
+    opacity: 0;
 }
 .imageTop
 {
@@ -219,6 +222,9 @@ nav>ul>li:hover
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    opacity: 0;
+    transform: translate(-100%);
+    transition: all .5s ease;
 }
 .description>p
 {
@@ -234,28 +240,33 @@ nav>ul>li:hover
 }
 .blockquote
 {
-    width:100%;
-    font-size: 2rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: .3rem .5rem;
-    font-size: 1.2rem;
-    border-radius: 1rem;
-    font-style: italic;
-    font-weight: 700;
-    gap:.5rem;
-    text-align: center;
-    font-family: "Roboto", sans-serif;
     margin-top: 1rem;
 }
-.blockquote>cite
+.blockquote>blockquote
+{
+    width:100%;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    transition: opacity 1.5s ease;
+    opacity: 0;
+}
+.blockquote>.author
 {
     font-size: 1.5rem;
     color: rgb(187, 187, 187);
     font-family: "Roboto", sans-serif;
     font-weight: 900;
+    transition: opacity 1.5s ease;
+    opacity: 0;
 }
 .shadow2
 {
@@ -1046,6 +1057,15 @@ footer>h2
 {
    width:100%;
    filter: brightness(.6);
+}
+.opacityClass
+{
+    opacity: 1;
+}
+.descriptionAnimation
+{
+    transform: translate(0);
+    opacity: 1;
 }
 @media (max-width:445px) {
     nav
